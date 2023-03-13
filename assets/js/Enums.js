@@ -26,6 +26,12 @@ const ProgressBarStatus = new Enums([
     "Active"
 ]);
 
+const SegmentState = new Enums([
+    "Won",
+    "Lost"
+]);
+
 export {
-    ProgressBarStatus
+    ProgressBarStatus,
+    SegmentState
 };
