@@ -21,6 +21,11 @@ class Enums {
 
 };
 
+const ProgressBarStatus = new Enums([
+    "Inactive",
+    "Active"
+]);
+
 export {
-    
+    ProgressBarStatus
 };
