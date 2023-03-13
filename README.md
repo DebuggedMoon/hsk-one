@@ -52,7 +52,16 @@ particularly HSK1 vocabulary.
 
 ### Features Left to Implement
 
+ - __Game Menu__
 
+    - A menu of some sorts that allows the user to start the game or view information about it.
+    - It should contain a "Tutorial" or "How to play" button.
+
+ - __Tutorial__
+
+    - A prompt that asks first time visiters if they want a tutorial.
+    - If the user agrees to a tutorials then the prompt changes to a tooltip that explains certain features.
+    - If the user declines it will simply hide the prompt.
 
 ## Testing
 
