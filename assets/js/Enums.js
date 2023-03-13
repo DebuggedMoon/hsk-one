@@ -6,8 +6,18 @@
 class Enums {
 
     constructor(enumConstants) {
-        // Logic for creating enum objects
+        
+        for (const constantName of enumConstants) {
+
+            this[constantName] = Symbol(constantName);
+
+        };
+
+        Object.freeze(this);
+
     };
+
+
 
 };
 
