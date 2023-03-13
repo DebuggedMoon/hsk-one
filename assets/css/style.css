@@ -10,6 +10,8 @@
     --color-blue: #5e8875;
     --color-blue-dark: #033343;
     --color-blue-gray: #444546;
+    --color-green: #238823;
+    --color-red: #d2222d;
 
 }
 
@@ -40,6 +42,8 @@ main {
     display: flex;
     flex-flow: column;
     align-items: center;
+    gap: 20vh;
+
 }
 
 /* ╠══════════╣ Segmented Progress Bar ╠══════════╣ */
