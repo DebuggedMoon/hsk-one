@@ -57,9 +57,24 @@ main {
 
 .segment {
     height: 0.5vh;
-    width: 4vh;
+    width: 6vh;
     border:1px solid var(--color-blue-dark);
     border-radius: 1vh;
+    transition: background-color 1s, border 1s;
+}
+
+.active-segment {
+    background-color: var(--color-blue-dark);
+}
+
+.won-segment {
+    background-color: var(--color-green);
+    border:1px solid var(--color-green);
+}
+
+.lost-segment {
+    background-color: var(--color-red);
+    border:1px solid var(--color-red);
 }
 
 /* ╠══════════╣ Word Card ╠══════════╣ */
