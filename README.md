@@ -12,7 +12,7 @@ particularly HSK1 vocabulary.
 
 ### Existing Features
 
- - __HSKOne Logo__
+ - __HSKone Logo__
 
     - The HSKOne logo is clearly visible at the top of the page.
 
