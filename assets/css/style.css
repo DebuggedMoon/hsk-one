@@ -1,0 +1,17 @@
+/* ╠══════════╣ Global Style ╠══════════╣ */
+
+:root {
+
+    --color-white: #f4f4f4;
+    --color-blue-light: #92b5a7;
+    --color-blue: #5e8875;
+    --color-blue-dark: #033343;
+
+}
+
+body {
+    background-color: var(--color-white);
+    font-family: "Raleway", sans-serif;
+    color: var(--color-blue-dark);
+    margin: 0;
+}
