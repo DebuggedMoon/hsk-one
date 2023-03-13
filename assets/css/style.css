@@ -1,5 +1,8 @@
 /* ╠══════════╣ Global Style ╠══════════╣ */
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap');
+
 :root {
 
     --color-white: #f4f4f4;
@@ -52,4 +55,39 @@ main {
     width: 4vh;
     border:1px solid var(--color-blue-dark);
     border-radius: 1vh;
+}
+
+/* ╠══════════╣ Word Card ╠══════════╣ */
+
+.word-card {
+
+    height: 20vh;
+    width: 20vh;
+    border-radius: 1vh;
+    border: 1px solid var(--color-blue);
+
+}
+
+#card-hanzi {
+
+    height: 75%;
+    width: 100%;
+    margin: 0;
+
+    font-size: 500%;
+    font-family: 'Noto Serif SC', sans-serif;
+
+    text-align: center;
+
+}
+
+#card-pinyin {
+
+    height: 25%;
+    width: 100%;
+
+    margin: 0;
+    font-size: 150%;
+    text-align: center;
+
 }
