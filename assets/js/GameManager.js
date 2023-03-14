@@ -1,4 +1,4 @@
-import { GameStatus, ProgressBarStatus } from "./Enums.js";
+import { GameStatus, ProgressBarStatus, SegmentState } from "./Enums.js";
 import wordList from "./data/word-list.js";
 import ProgressBar from "./ProgressBar.js";
 
@@ -32,12 +32,22 @@ class GameManager {
 
             button.classList.add(
                 INACTIVE_BUTTON_CLASS,
-                (button.innerHTML == this.correctAnswer) ? CORRECT_BUTTON_CLASS : INCORRECT_BUTTON_CLASS
-            )
+                (button.innerHTML == this.correctAnswer.english) ? CORRECT_BUTTON_CLASS : INCORRECT_BUTTON_CLASS
+            );
 
-            setTimeout(this.startRound, 2500)
+        };
 
-        }
+        if (this.correctAnswer.english === userAnswer) {
+
+            ProgressBar.progress(SegmentState.Won);
+
+        } else {
+            
+            ProgressBar.progress(SegmentState.Lost);
+            
+        };
+        
+        setTimeout(this.startRound, 2500);
 
     }
 
