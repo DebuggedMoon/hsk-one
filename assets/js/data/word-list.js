@@ -75,11 +75,6 @@ export default [
       "english": "how"
     },
     {
-      "hanzi": "&#x600e&#x4e48&#x6837",
-      "pinyin": "zěnmeyàng",
-      "english": "how about"
-    },
-    {
       "hanzi": "&#x4e00",
       "pinyin": "yī",
       "english": "one"
@@ -223,11 +218,6 @@ export default [
       "hanzi": "&#x533b&#x9662",
       "pinyin": "yīyuàn",
       "english": "hospital"
-    },
-    {
-      "hanzi": "&#x706b&#x8f66&#x7ad9",
-      "pinyin": "huǒchēzhàn",
-      "english": "trainstation"
     },
     {
       "hanzi": "&#x4e2d&#x56fd",
@@ -440,11 +430,6 @@ export default [
       "english": "airplane"
     },
     {
-      "hanzi": "&#x51fa&#x79df&#x8f66",
-      "pinyin": "chūzūchē",
-      "english": "taxi"
-    },
-    {
       "hanzi": "&#x7535&#x89c6",
       "pinyin": "diànshì",
       "english": "television"
@@ -520,11 +505,6 @@ export default [
       "english": "thank"
     },
     {
-      "hanzi": "&#x4e0d&#x5ba2&#x6c14",
-      "pinyin": "búkèqì",
-      "english": "you are welcome"
-    },
-    {
       "hanzi": "&#x518d&#x89c1",
       "pinyin": "zàijiàn",
       "english": "good-bye"
@@ -533,16 +513,6 @@ export default [
       "hanzi": "&#x8bf7",
       "pinyin": "qǐng",
       "english": "please"
-    },
-    {
-      "hanzi": "&#x5bf9&#x4e0d&#x8d77",
-      "pinyin": "duìbùqǐ",
-      "english": "sorry"
-    },
-    {
-      "hanzi": "&#x6ca1&#x5173&#x7cfb",
-      "pinyin": "méiguānxì",
-      "english": "It doesn't matter"
     },
     {
       "hanzi": "&#x662f",
@@ -618,11 +588,6 @@ export default [
       "hanzi": "&#x7761&#x89c9",
       "pinyin": "shuìjiào",
       "english": "sleep"
-    },
-    {
-      "hanzi": "&#x6253&#x7535&#x8bdd",
-      "pinyin": "dǎdiànhuà",
-      "english": "callup"
     },
     {
       "hanzi": "&#x505a",
