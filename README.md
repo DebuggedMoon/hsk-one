@@ -6,7 +6,7 @@ Chinese vocabulary through interactive exercises. Our platform is specifically
 tailored for individuals who are seeking to learn the basics of the Chinese language,
 particularly HSK1 vocabulary.
 
-
+![Responsive Mockup](assets/images/docs/responsive-mockup.png)
 
 ## Features
 
