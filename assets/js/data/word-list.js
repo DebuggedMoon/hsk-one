@@ -2,12 +2,12 @@ export default [
     {
       "hanzi": "&#x6211",
       "pinyin": "wǒ",
-      "english": "I,me"
+      "english": "I, me"
     },
     {
       "hanzi": "&#x6211&#x4eec",
       "pinyin": "wǒmen",
-      "english": "we,us(pl.)"
+      "english": "we, us(pl.)"
     },
     {
       "hanzi": "&#x4f60",
@@ -17,22 +17,22 @@ export default [
     {
       "hanzi": "&#x4f60&#x4eec",
       "pinyin": "nǐmen",
-      "english": "you(pl.)"
+      "english": "you (pl.)"
     },
     {
       "hanzi": "&#x4ed6",
       "pinyin": "tā",
-      "english": "he,him"
+      "english": "he, him"
     },
     {
       "hanzi": "&#x5979",
       "pinyin": "tā",
-      "english": "she,her"
+      "english": "she, her"
     },
     {
       "hanzi": "&#x4ed6&#x4eec",
       "pinyin": "tāmen",
-      "english": "they(male+female/male,pl.)"
+      "english": "they( male + female/male,pl.)"
     },
     {
       "hanzi": "&#x5979&#x4eec",
@@ -50,11 +50,6 @@ export default [
       "english": "that(there)"
     },
     {
-      "hanzi": "&#x54ea&#xff08&#x54ea&#x513f&#xff09",
-      "pinyin": "nǎ",
-      "english": "(nǎr)where"
-    },
-    {
       "hanzi": "&#x8c01",
       "pinyin": "shéi",
       "english": "who"
@@ -62,17 +57,17 @@ export default [
     {
       "hanzi": "&#x4ec0&#x4e48",
       "pinyin": "shénme",
-      "english": "what,why"
+      "english": "what, why"
     },
     {
       "hanzi": "&#x591a&#x5c11",
       "pinyin": "duōshǎo",
-      "english": "howmany,howmuch"
+      "english": "how many, how much"
     },
     {
       "hanzi": "&#x51e0",
       "pinyin": "jǐ",
-      "english": "afew,howmany"
+      "english": "a few, how many"
     },
     {
       "hanzi": "&#x600e&#x4e48",
@@ -82,7 +77,7 @@ export default [
     {
       "hanzi": "&#x600e&#x4e48&#x6837",
       "pinyin": "zěnmeyàng",
-      "english": "howabout"
+      "english": "how about"
     },
     {
       "hanzi": "&#x4e00",
@@ -142,7 +137,7 @@ export default [
     {
       "hanzi": "&#x4e2a",
       "pinyin": "gè",
-      "english": "one,a,an"
+      "english": "one, a, an"
     },
     {
       "hanzi": "&#x5c81",
@@ -177,7 +172,7 @@ export default [
     {
       "hanzi": "&#x5f88",
       "pinyin": "hěn",
-      "english": "quite,very"
+      "english": "quite, very"
     },
     {
       "hanzi": "&#x592a",
@@ -197,27 +192,7 @@ export default [
     {
       "hanzi": "&#x5728",
       "pinyin": "zài",
-      "english": "in,at"
-    },
-    {
-      "hanzi": "&#x7684",
-      "pinyin": "de\n",
-      "english": ""
-    },
-    {
-      "hanzi": "&#x4e86",
-      "pinyin": "le\n",
-      "english": ""
-    },
-    {
-      "hanzi": "&#x5417",
-      "pinyin": "ma\n",
-      "english": ""
-    },
-    {
-      "hanzi": "&#x5462",
-      "pinyin": "ne\n",
-      "english": ""
+      "english": "in, at"
     },
     {
       "hanzi": "&#x5582",
@@ -522,7 +497,7 @@ export default [
     {
       "hanzi": "&#x6c49&#x8bed",
       "pinyin": "hànyǔ",
-      "english": "mandarinChinese"
+      "english": "mandarin Chinese"
     },
     {
       "hanzi": "&#x5b57",
@@ -547,7 +522,7 @@ export default [
     {
       "hanzi": "&#x4e0d&#x5ba2&#x6c14",
       "pinyin": "búkèqì",
-      "english": "youarewelcome"
+      "english": "you are welcome"
     },
     {
       "hanzi": "&#x518d&#x89c1",
@@ -567,12 +542,12 @@ export default [
     {
       "hanzi": "&#x6ca1&#x5173&#x7cfb",
       "pinyin": "méiguānxì",
-      "english": "Itdoesn'tmatter"
+      "english": "It doesn't matter"
     },
     {
       "hanzi": "&#x662f",
       "pinyin": "shì",
-      "english": "be(am,is,are)"
+      "english": "be (am, is, are)"
     },
     {
       "hanzi": "&#x6709",
@@ -717,7 +692,7 @@ export default [
     {
       "hanzi": "&#x80fd",
       "pinyin": "néng",
-      "english": "can,beableto"
+      "english": "can, be able to"
     },
     {
       "hanzi": "&#x597d",
@@ -737,12 +712,12 @@ export default [
     {
       "hanzi": "&#x591a",
       "pinyin": "duō",
-      "english": "many,much"
+      "english": "many, much"
     },
     {
       "hanzi": "&#x5c11",
       "pinyin": "shǎo",
-      "english": "few,little"
+      "english": "few, little"
     },
     {
       "hanzi": "&#x51b7",
@@ -762,6 +737,6 @@ export default [
     {
       "hanzi": "&#x6f02&#x4eae",
       "pinyin": "piàoliang",
-      "english": "beautifu"
+      "english": "beautiful"
     }
 ];
