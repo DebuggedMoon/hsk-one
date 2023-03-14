@@ -99,3 +99,4 @@ Live link can be found here: https://debuggedmoon.github.io/hsk-one/
 ### Media
 
   - Flower used as logo was found on [vecteezy](https://www.vecteezy.com/vector-art/1236604-set-with-various-flat-design-flowers).
+  - Emojies used in commit messages are inspired by [gitmoji](https://gitmoji.dev/) :D
