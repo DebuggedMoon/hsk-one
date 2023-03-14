@@ -11,15 +11,15 @@ class Enums {
 
             this[constantName] = Symbol(constantName);
 
-        };
+        }
 
         Object.freeze(this);
 
-    };
+    }
 
 
 
-};
+}
 
 const ProgressBarStatus = new Enums([
     "Inactive",

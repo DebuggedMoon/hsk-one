@@ -7,9 +7,9 @@ const pinyinDisplay = document.getElementById("card-pinyin");
 const hanziDisplay = document.getElementById("card-hanzi");
 const menuModal = document.getElementById("menu");
 
-const INACTIVE_BUTTON_CLASS = "not-clickable"
-const INCORRECT_BUTTON_CLASS = "incorrect-answer"
-const CORRECT_BUTTON_CLASS = "correct-answer"
+const INACTIVE_BUTTON_CLASS = "not-clickable";
+const INCORRECT_BUTTON_CLASS = "incorrect-answer";
+const CORRECT_BUTTON_CLASS = "correct-answer";
 
 /**
  * Singleton Class for managing the game and gameplay "loop".
@@ -37,7 +37,7 @@ class GameManager {
                 (button.innerHTML == this.correctAnswer.english) ? CORRECT_BUTTON_CLASS : INCORRECT_BUTTON_CLASS
             );
 
-        };
+        }
 
         if (this.correctAnswer.english === userAnswer) {
 
@@ -47,7 +47,7 @@ class GameManager {
             
             ProgressBar.progress(SegmentState.Lost);
             
-        };
+        }
         
         setTimeout(() => {
             this.startRound();
@@ -69,7 +69,7 @@ class GameManager {
 
             return;
 
-        };
+        }
 
         let answers = [];
         for (let button of answerButtons) {
@@ -85,11 +85,11 @@ class GameManager {
             button.innerHTML = answer.english;
             answers.push(answer);
 
-        };
+        }
 
         this.correctAnswer = answers[Math.floor(Math.random() * answers.length)];
-        hanziDisplay.innerHTML = this.correctAnswer.hanzi;
         pinyinDisplay.innerHTML = this.correctAnswer.pinyin;
+        hanziDisplay.innerHTML = this.correctAnswer.hanzi;
         this.currentRound++;
 
     }

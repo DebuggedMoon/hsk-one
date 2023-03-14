@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (GameManager.status == GameStatus.Active) GameManager.submitUserAnswer(button.innerHTML);
 
-        })
+        });
 
-    }
+    };
 
 });

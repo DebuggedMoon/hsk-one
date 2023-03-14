@@ -38,7 +38,7 @@ class ProgressBar {
                         ACTIVE_SEGMENT_CLASS,
                         LOST_SEGMENT_CLASS,
                         WON_SEGMENT_CLASS
-                    )
+                    );
                 });
 
                 break;
@@ -51,9 +51,9 @@ class ProgressBar {
                 break;
 
 
-        };
+        }
 
-    };
+    }
 
     /**
      * Move up the progress bar to the next segment and set the current segments state.
@@ -93,8 +93,8 @@ class ProgressBar {
 
         }
 
-    };
+    }
 
-};
+}
 
 export default (new ProgressBar());
