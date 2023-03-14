@@ -18,7 +18,14 @@ particularly HSK1 vocabulary.
 
 ![Logo]()
 
-  - __Game Area__
+ - __Game Menu__
+
+    - The games starting menu that allows the user to start the game using the "play" button.
+    - Includes instructions on how the game is played.
+
+![Game Menu]()
+
+ - __Game Area__
 
     - All gameplay related elements and interactions are contained in this area.
     - The user will be given 4 options to choose from and has to correctly choose which one is the correct translation of the symbol in the middle / word card.
@@ -51,11 +58,6 @@ particularly HSK1 vocabulary.
 ![Answer Buttons]()
 
 ### Features Left to Implement
-
- - __Game Menu__
-
-    - A menu of some sorts that allows the user to start the game or view information about it.
-    - It should contain a "Tutorial" or "How to play" button.
 
  - __Tutorial__
 
