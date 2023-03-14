@@ -52,6 +52,32 @@ class ProgressBar {
 
     };
 
+    /**
+     * Move up the progress bar to the next segment and set the current segments state.
+     * @param {SegmentState} state State to be set for current segment.
+     */
+    progress(state) {
+
+        if (this.status === ProgressBarStatus.Inactive)
+            console.error("Cannot progress inactive progress bar.");
+        
+        switch(state) {
+
+            case SegmentState.Won:
+                segmentElements[this.round].classList
+                    .add(WON_SEGMENT_CLASS);
+
+            case SegmentState.Lost:
+                segmentElements[this.round].classList
+                    .add(LOST_SEGMENT_CLASS);
+
+        }
+
+        segmentElements[this.round].classList
+            .remove(ACTIVE_SEGMENT_CLASS);
+
+    };
+
 };
 
 export default (new ProgressBar());
