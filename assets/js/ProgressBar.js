@@ -43,10 +43,9 @@ class ProgressBar {
 
             case ProgressBarStatus.Active:
 
-            this.round = 1;
-            segmentElements[this.round].classList
+                this.round = 1;
+                segmentElements[this.round].classList
                     .add(ACTIVE_SEGMENT_CLASS);
-
 
         };
 
