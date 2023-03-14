@@ -5,7 +5,7 @@ import ProgressBar from "./ProgressBar.js";
 const answerButtons = [...document.getElementsByClassName("answer-button")];
 const pinyinDisplay = document.getElementById("card-pinyin");
 const hanziDisplay = document.getElementById("card-hanzi");
-const menuModel = document.getElementById("menu");
+const menuModal = document.getElementById("menu");
 
 const INACTIVE_BUTTON_CLASS = "not-clickable"
 const INCORRECT_BUTTON_CLASS = "incorrect-answer"
@@ -63,7 +63,7 @@ class GameManager {
         if (this.currentRound == 5) {
 
             ProgressBar.setStatus(ProgressBarStatus.Inactive);
-            menuModel.classList.remove("hidden");
+            menuModal.classList.remove("hidden");
             this.status = GameStatus.Inactive;
             this.currentRound = 0;
 
