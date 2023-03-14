@@ -203,9 +203,18 @@ main {
 
 }
 
+#menu h2 {
+
+    margin-bottom: 0;
+    margin-top: 10%;
+    -webkit-text-stroke: medium;
+
+}
+
 .instructions {
 
     width: 80%;
+    font-size: 90%;
     -webkit-text-stroke: medium;
 
 }
