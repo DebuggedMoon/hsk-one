@@ -140,12 +140,20 @@ main {
 }
 
 .answer-button:hover {
-    border: 2px solid var(--color-blue);
+    border: 3px solid var(--color-blue);
 }
 
-.inactive-button {
+.not-clickable {
     pointer-events: none;
-    background-color: var(--color-blue-gray);
-    color: var(--color-blue-gray);
-    border: none;
+    background-color: var(--color-white);
+    color: var(--color-blue-dark);
+    font-weight: bold;
+}
+
+.correct-answer {
+    border: 3px solid var(--color-green);
+}
+
+.incorrect-answer {
+    border: 3px solid var(--color-red);
 }
