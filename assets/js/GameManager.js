@@ -42,7 +42,7 @@ class GameManager {
     }
 
     /**
-     * Starts a round
+     * Starts a round by unlocking answer buttons and choose random answers.
      * @returns {{hanzi: String, pinyin: String, english: String}} The answer to be used in this round.
      */
     startRound() {
@@ -50,7 +50,7 @@ class GameManager {
         let answers = [];
         for (let button of answerButtons) {
 
-            let answer = wordList[Math.floor(Math.random() * wordList.length) + 1]
+            let answer = wordList[Math.floor(Math.random() * wordList.length)]
 
             button.classList.remove(
                 INACTIVE_BUTTON_CLASS,
@@ -62,11 +62,8 @@ class GameManager {
             answers.push(answer);
 
         }
-
-        hanziDisplay.innerHTML = answers[0].hanzi;
-        pinyinDisplay.innerHTML = answers[0].pinyin;        
         
-        return answers;
+        return answers[Math.floor(Math.random() * answers.length)];
 
     }
 
@@ -77,9 +74,11 @@ class GameManager {
 
         this.status = GameStatus.Active;
         
-
         this.correctAnswer = this.startRound();
         ProgressBar.setStatus(ProgressBarStatus.Active);
+        hanziDisplay.innerHTML = this.correctAnswer.hanzi;
+        pinyinDisplay.innerHTML = this.correctAnswer.pinyin;
+
 
     }
 
