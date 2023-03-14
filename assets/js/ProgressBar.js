@@ -1,4 +1,4 @@
-import { ProgressBarStatus, SegmentState} from "./Enums";
+import { ProgressBarStatus, SegmentState} from "./Enums.js";
 
 const progressElement = document.getElementById("segmented-progress-bar");
 const segmentElements = [...progressElement.children];
