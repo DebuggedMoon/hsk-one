@@ -75,6 +75,7 @@ class ProgressBar {
         segmentElements[this.round].classList
             .remove(ACTIVE_SEGMENT_CLASS);
 
+        this.round++;
     };
 
 };
