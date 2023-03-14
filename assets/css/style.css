@@ -167,3 +167,45 @@ main {
     transform: translate(-50%, -50%);
     background-color: var(--color-blue-light);
 }
+
+#menu {
+
+    width: 22rem;
+    height: 70vh;
+    top: 66%;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    border-radius: 1vh;
+    transition: transform 1s;
+
+}
+
+.hidden {
+    transform: translate(-50%, 100%);
+}
+
+#play-button {
+
+    background-color: var(--color-blue-dark);
+    border: 1px solid var(--color-blue-dark);
+    color: var(--color-white);
+
+    border-radius: 1vh;
+    cursor: pointer;
+
+    width: 85%;
+    height: 10%;
+    font-size: 200%;
+    margin-top: 10%;
+
+}
+
+.instructions {
+
+    width: 80%;
+    -webkit-text-stroke: medium;
+
+}
