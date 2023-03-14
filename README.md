@@ -69,7 +69,12 @@ particularly HSK1 vocabulary.
 
 ### Validator Testing
 
-
+ - HTML
+   - There were no errors found using the offical [W3C validator]("https://validator.w3.org/nu/?doc=https%3A%2F%2Fdebuggedmoon.github.io%2Fhsk-one%2F").
+ - CSS
+   - There were no errors found using the offical [Jigsaw validator]("https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdebuggedmoon.github.io%2Fhsk-one%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en").
+ - JavaScript
+   - There were no errors found using the offical [Jshint validator]("https://jshint.com/").
 
 ### Unfixed Bugs
 
