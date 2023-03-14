@@ -1,7 +1,6 @@
 /* ╠══════════╣ Global Style ╠══════════╣ */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Raleway:wght@300&display=swap');
 
 :root {
 
@@ -42,7 +41,7 @@ main {
     display: flex;
     flex-flow: column;
     align-items: center;
-    gap: 20vh;
+    gap: 16vh;
 
 }
 
@@ -90,11 +89,11 @@ main {
 
 #card-hanzi {
 
-    height: 75%;
+    height: 70%;
     width: 100%;
     margin: 0;
 
-    font-size: 500%;
+    font-size: 400%;
     font-family: 'Noto Sans SC', sans-serif;
 
     text-align: center;
@@ -103,7 +102,7 @@ main {
 
 #card-pinyin {
 
-    height: 25%;
+    height: 30%;
     width: 100%;
 
     margin: 0;
