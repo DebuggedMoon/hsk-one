@@ -42,8 +42,7 @@ class GameManager {
     }
 
     /**
-     * Starts a round by unlocking answer buttons and choose random answers.
-     * @returns {{hanzi: String, pinyin: String, english: String}} The answer to be used in this round.
+     * Starts a round by unlocking answer buttons, updating card text and choosing random answers.
      */
     startRound() {
         
@@ -62,8 +61,11 @@ class GameManager {
             answers.push(answer);
 
         }
-        
-        return answers[Math.floor(Math.random() * answers.length)];
+
+        this.correctAnswer = answers[Math.floor(Math.random() * answers.length)];
+        hanziDisplay.innerHTML = this.correctAnswer.hanzi;
+        pinyinDisplay.innerHTML = this.correctAnswer.pinyin;
+        this.currentRound++;
 
     }
 
@@ -71,14 +73,11 @@ class GameManager {
      * Starts the game.
      */
     startGame() {
-
-        this.status = GameStatus.Active;
         
-        this.correctAnswer = this.startRound();
-        ProgressBar.setStatus(ProgressBarStatus.Active);
-        hanziDisplay.innerHTML = this.correctAnswer.hanzi;
-        pinyinDisplay.innerHTML = this.correctAnswer.pinyin;
+        this.status = GameStatus.Active;
+        this.startRound();
 
+        ProgressBar.setStatus(ProgressBarStatus.Active);
 
     }
 
