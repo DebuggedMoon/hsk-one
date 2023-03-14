@@ -25,14 +25,14 @@ body {
 /* ╠══════════╣ Heading ╠══════════╣ */
 
 header {
-    height: 15vh;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .logo {
-    height: 10vh;
+    height: 14vh;
 }
 
 /* ╠══════════╣ Game Area ╠══════════╣ */
