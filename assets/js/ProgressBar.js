@@ -41,10 +41,15 @@ class ProgressBar {
                     )
                 });
 
+                break;
+
             case ProgressBarStatus.Active:
 
                 segmentElements[this.round].classList
                     .add(ACTIVE_SEGMENT_CLASS);
+
+                break;
+
 
         };
 
@@ -65,9 +70,14 @@ class ProgressBar {
                 segmentElements[this.round].classList
                     .add(WON_SEGMENT_CLASS);
 
+                break;
+
+
             case SegmentState.Lost:
                 segmentElements[this.round].classList
                     .add(LOST_SEGMENT_CLASS);
+
+                break;
 
         }
 
