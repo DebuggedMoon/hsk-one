@@ -47,7 +47,9 @@ class GameManager {
             
         };
         
-        setTimeout(this.startRound, 2500);
+        setTimeout(() => {
+            this.startRound();
+        }, 1000);
 
     }
 
