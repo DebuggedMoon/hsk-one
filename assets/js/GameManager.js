@@ -5,6 +5,7 @@ import ProgressBar from "./ProgressBar.js";
 const answerButtons = [...document.getElementsByClassName("answer-button")];
 const pinyinDisplay = document.getElementById("card-pinyin");
 const hanziDisplay = document.getElementById("card-hanzi");
+const menuModel = document.getElementById("menu");
 
 const INACTIVE_BUTTON_CLASS = "not-clickable"
 const INCORRECT_BUTTON_CLASS = "incorrect-answer"
@@ -19,6 +20,7 @@ class GameManager {
 
         this.status = GameStatus.Inactive;
         this.correctAnswer = "";
+        this.currentRound = 0;
 
     }
 
@@ -58,10 +60,21 @@ class GameManager {
      */
     startRound() {
         
+        if (this.currentRound == 5) {
+
+            ProgressBar.setStatus(ProgressBarStatus.Inactive);
+            menuModel.classList.remove("hidden");
+            this.status = GameStatus.Inactive;
+            this.currentRound = 0;
+
+            return;
+
+        };
+
         let answers = [];
         for (let button of answerButtons) {
 
-            let answer = wordList[Math.floor(Math.random() * wordList.length)]
+            let answer = wordList[Math.floor(Math.random() * wordList.length)];
 
             button.classList.remove(
                 INACTIVE_BUTTON_CLASS,
@@ -72,7 +85,7 @@ class GameManager {
             button.innerHTML = answer.english;
             answers.push(answer);
 
-        }
+        };
 
         this.correctAnswer = answers[Math.floor(Math.random() * answers.length)];
         hanziDisplay.innerHTML = this.correctAnswer.hanzi;

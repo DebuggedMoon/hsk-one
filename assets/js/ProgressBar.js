@@ -85,8 +85,13 @@ class ProgressBar {
             .remove(ACTIVE_SEGMENT_CLASS);
 
         this.round++;
-        segmentElements[this.round].classList
-            .add(ACTIVE_SEGMENT_CLASS);
+
+        if (this.round < 5) {
+
+            segmentElements[this.round].classList
+                .add(ACTIVE_SEGMENT_CLASS);
+
+        }
 
     };
 
