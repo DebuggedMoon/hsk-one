@@ -16,21 +16,21 @@ particularly HSK1 vocabulary.
 
     - The HSKOne logo is clearly visible at the top of the page.
 
-![Logo]()
+![Logo](assets/images/docs/logo.png)
 
  - __Game Menu__
 
     - The games starting menu that allows the user to start the game using the "play" button.
     - Includes instructions on how the game is played.
 
-![Game Menu]()
+![Game Menu](assets/images/docs/menu.png)
 
  - __Game Area__
 
     - All gameplay related elements and interactions are contained in this area.
     - The user will be given 4 options to choose from and has to correctly choose which one is the correct translation of the symbol in the middle / word card.
 
-![Game Area]()
+![Game Area](assets/images/docs/game-area.png)
 
  - __Progress Bar__
 
@@ -38,7 +38,7 @@ particularly HSK1 vocabulary.
     - It displays each round as a segment where a filled in segment is the current round being played and a empty ones are rounds left to play.
     - Rounds where finished will have either a green or a red color depending on wheter the user answered correctly or not.
 
-![Progress Bar]()
+![Progress Bar](assets/images/docs/progress-bar.png)
 
  - __Word Card__
 
@@ -46,7 +46,7 @@ particularly HSK1 vocabulary.
     - It is placed in the middle of the screen and enlarged to make sure it stands out and is readable.
     - When a answer is submited the card border will change color to either red or green to make the result clearer.
 
-![Word Card]()
+![Word Card](assets/images/docs/word-card.png)
 
  - __Answer Buttons__
 
@@ -55,7 +55,7 @@ particularly HSK1 vocabulary.
     - After clicking one of the buttons the user will recieve feedback in form of the correct button turning green and the rest red.
     - The buttons are in a state of "inactive" until the game starts which blocks the user from interacting with them and grays them out.
 
-![Answer Buttons]()
+![Answer Buttons](assets/images/docs/answer-buttons.png)
 
 ### Features Left to Implement
 
