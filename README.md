@@ -78,19 +78,24 @@ particularly HSK1 vocabulary.
 
 ### Unfixed Bugs
 
-
+ - Touchscreens cause border on answer buttons to have hover styling when it should have either "correct" or "incorrect" styling.
+ - Anwser buttons resolve with 2 green buttons instead of only 1 like it should normaly. Couldn't replicate bug.
 
 ## Deployment
 
+ - The site was deployed to Github pages. The steps to deplay are as follows:
+   - In the Github repository, navigate to the Settings tab
+   - From the source section drop-down menu, select the master / main branch
+   - Once the desired branch has been selected, the page will be automatically refreshed with a detailed ribbon to indicate the successful deployment.
 
+Live link can be found here: https://debuggedmoon.github.io/hsk-one/
 
 ## Credits
 
-
 ### Content
 
-
+ - HSK1 Wordlist that was used and modified was taken from [digmandarin](https://www.digmandarin.com/wp-content/uploads/2019/11/HSK-1-Vocabulary-List.pdf).
 
 ### Media
 
-
+  - Flower used as logo was found on [vecteezy](https://www.vecteezy.com/vector-art/1236604-set-with-various-flat-design-flowers).
