@@ -1,4 +1,6 @@
-import { GameStatus } from "./Enums";
+import { GameStatus, ProgressBarStatus } from "./Enums";
+import wordList from "./data/word-list.js"
+import ProgressBar from "./ProgressBar.js";
 
 /**
  * Singleton Class for managing the game and gameplay "loop".
@@ -6,6 +8,18 @@ import { GameStatus } from "./Enums";
 class GameManager {
     
     constructor() {
+
+        this.status = GameStatus.Inactive;
+
+    }
+
+    /**
+     * Starts the game.
+     */
+    startGame() {
+
+        this.status = GameStatus.Active;
+        ProgressBar.setStatus(ProgressBarStatus.Active);        
 
     }
 
