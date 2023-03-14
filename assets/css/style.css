@@ -218,3 +218,11 @@ main {
     -webkit-text-stroke: medium;
 
 }
+
+/* ╠══════════╣ Media Quaries ╠══════════╣ */
+
+@media screen and (min-height: 950px) {
+    #menu {
+        width: 30rem;
+    }
+}
