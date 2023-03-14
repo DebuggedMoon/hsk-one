@@ -37,7 +37,7 @@ header {
 /* ╠══════════╣ Game Area ╠══════════╣ */
 
 main {
-    height: 85vh;
+    height: 80vh;
     display: flex;
     flex-flow: column;
     align-items: center;
