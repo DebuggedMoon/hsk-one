@@ -33,11 +33,20 @@ class GameManager {
 
         for (let button of answerButtons) {
 
+            const resultStyleClass = button.innerHTML == this.correctAnswer.english ? CORRECT_BUTTON_CLASS : INCORRECT_BUTTON_CLASS;
+
             button.classList.add(
                 INACTIVE_BUTTON_CLASS,
-                (button.innerHTML == this.correctAnswer.english) ? CORRECT_BUTTON_CLASS : INCORRECT_BUTTON_CLASS
-            );
+                resultStyleClass
+            );   
 
+            if (userAnswer === button.innerHTML) {
+
+                button.classList.add(
+                    INACTIVE_BUTTON_CLASS,
+                    `selected-${resultStyleClass}`
+                );
+            }
         }
 
         if (this.correctAnswer.english === userAnswer) {
@@ -97,7 +106,9 @@ class GameManager {
             answerButtons[i].classList.remove(
                 INACTIVE_BUTTON_CLASS,
                 CORRECT_BUTTON_CLASS,
-                INCORRECT_BUTTON_CLASS
+                INCORRECT_BUTTON_CLASS,
+                `selected-${CORRECT_BUTTON_CLASS}`,
+                `selected-${INCORRECT_BUTTON_CLASS}`,
             );
 
             answerButtons[i].innerHTML = answers[i].english;

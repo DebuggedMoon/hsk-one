@@ -158,6 +158,20 @@ main {
     border: 3px solid var(--color-red);
 }
 
+.selected-incorrect-answer {
+    background-color: var(--color-red);
+    color: var(--color-white);
+
+    transition: background-color 0s;
+}
+
+.selected-correct-answer {
+    background-color: var(--color-green);
+    color: var(--color-white);
+
+    transition: background-color 0s;
+}
+
 /* ╠══════════╣ Menu Modal ╠══════════╣ */
 
 .modal {
