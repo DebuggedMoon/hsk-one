@@ -99,7 +99,6 @@ class GameManager {
         }
 
         let answers = this.getRandomAnswers(answerButtons.length);
-        console.log(answers);
 
         for (let i = 0; i < answerButtons.length; i++) {
 
