@@ -170,7 +170,7 @@ export default [
     {
       "hanzi": "&#x6ca1",
       "pinyin": "méi",
-      "english": "no"
+      "english": "not"
     },
     {
       "hanzi": "&#x5f88",
