@@ -1,3 +1,11 @@
+
+/**
+ * @typedef {Object} Word
+ * @property {string} hanzi
+ * @property {string} pinyin
+ * @property {string} english
+ */
+
 export default [
     {
       "hanzi": "&#x6211",

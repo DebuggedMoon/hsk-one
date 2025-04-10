@@ -11,6 +11,7 @@ const INACTIVE_BUTTON_CLASS = "not-clickable";
 const INCORRECT_BUTTON_CLASS = "incorrect-answer";
 const CORRECT_BUTTON_CLASS = "correct-answer";
 
+/** @typedef {import("./data/word-list.js").Word} Word */
 /**
  * Singleton Class for managing the game and gameplay "loop".
  */
@@ -56,6 +57,23 @@ class GameManager {
     }
 
     /**
+     * Picks a given amount of random answers and returns them.
+     * @param {number} amount
+     * @returns {Word[]}
+     */
+    getRandomAnswers(amount) {
+        const randomAnswers = new Set();
+
+        while (randomAnswers.size < amount) {
+            randomAnswers.add(
+                wordList[Math.floor(Math.random() * wordList.length)]
+            )
+        }
+
+        return [...randomAnswers];
+    }
+
+    /**
      * Starts a round by unlocking answer buttons, updating card text and choosing random answers.
      */
     startRound() {
@@ -71,27 +89,24 @@ class GameManager {
 
         }
 
-        let answers = [];
-        for (let button of answerButtons) {
+        let answers = this.getRandomAnswers(answerButtons.length);
+        console.log(answers);
 
-            let answer = wordList[Math.floor(Math.random() * wordList.length)];
+        for (let i = 0; i < answerButtons.length; i++) {
 
-            button.classList.remove(
+            answerButtons[i].classList.remove(
                 INACTIVE_BUTTON_CLASS,
                 CORRECT_BUTTON_CLASS,
                 INCORRECT_BUTTON_CLASS
             );
 
-            button.innerHTML = answer.english;
-            answers.push(answer);
-
+            answerButtons[i].innerHTML = answers[i].english;
         }
 
         this.correctAnswer = answers[Math.floor(Math.random() * answers.length)];
         pinyinDisplay.innerHTML = this.correctAnswer.pinyin;
         hanziDisplay.innerHTML = this.correctAnswer.hanzi;
         this.currentRound++;
-
     }
 
     /**
